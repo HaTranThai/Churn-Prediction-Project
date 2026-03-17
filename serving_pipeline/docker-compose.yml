@@ -9,7 +9,7 @@ services:
     environment:
       - MODEL_URI=models:/customer_churn_model@champion 
       - MLFLOW_TRACKING_URI=http://mlflow_server:5000
-      - MLFLOW_S3_ENDPOINT_URL=http://172.18.0.3:9000
+      - MLFLOW_S3_ENDPOINT_URL=http://minio:9000
       - AWS_ACCESS_KEY_ID=admin
       - AWS_SECRET_ACCESS_KEY=admin123
       - AWS_DEFAULT_REGION=us-east-1
